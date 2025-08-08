@@ -12,6 +12,10 @@ from rest_framework.permissions import IsAuthenticated
 # Create your views here.
 
 # @permission_classes([IsAuthenticated])
+
+def index(request):
+    return render(request, 'index.html', {})
+
 class MenuItemsView(ListAPIView):
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
@@ -53,8 +57,7 @@ class BookingViewSet(ModelViewSet):
 
 
 
-# def index(request):
-#     return render(request, 'index.html', {})
+
 
 # class bookingView(APIView):
 #     def get(self,request):
