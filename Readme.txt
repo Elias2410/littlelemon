@@ -29,4 +29,4 @@ to get,edit,delete booking (!!Auth Token Required!!):
 [POST] http://127.0.0.1:8000/api/booking/{Book_id}
 
 to add new booking:
-[POST] http://127.0.0.1:8000/api/create_booking/
+[POST] http://127.0.0.1:8000/api/create_booking/ 
